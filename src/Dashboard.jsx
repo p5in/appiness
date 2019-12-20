@@ -8,7 +8,7 @@ class Dashboard extends Component {
     };
   }
   componentDidMount() {
-    fetch("https://github.com/pandeypraveen3696/appiness/blob/master/public/db_dashboard.json")
+    fetch("/db_dashboard.json")
       .then(res => res.json())
       .then(
         result => {

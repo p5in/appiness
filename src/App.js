@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:8001/db_login.json")
+    fetch("/db_login.json")
       .then(res => res.json())
       .then(
         result => {
